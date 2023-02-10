@@ -1,9 +1,9 @@
 {{!-- <h1>Beers</h1> --}}
 
-<ul>
+<div id="beers">
   {{#each beersList}}
-
-    {{> beerpartial this}}
-
+    <div class="beers-container">
+      {{> beerpartial this}}
+    </div>
   {{/each}}
-</ul>
+</div>

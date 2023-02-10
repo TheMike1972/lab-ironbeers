@@ -86,3 +86,53 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+#beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.beers-container {
+    width: 30rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 10rem;
+}
+
+.beers-container a {
+     color: black;
+     font-weight: 700;
+     margin: 0;
+     padding: 0;   
+}
+
+picture {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+picture img {
+    height: auto;
+}
+
+.beer-tagline {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    color: #bfbfbf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.beer-description {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+    font-weight: 700;
+}
