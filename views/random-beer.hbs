@@ -2,12 +2,20 @@
 
 <ul>
   {{#each responseFromAPI}}
-
-    {{> beerpartial this}}
-    
-    <p class="food-pairing">{{this.food_pairing}}</p>
-    <p class="brewers-tips">{{this.brewers_tips}}</p>
-
+    <div class="random-beer-container">
+      {{> beerpartial this}}
+        <div class="beer-info-comp">
+          <h3>Food Pairing</h3>
+            <ul class="food-pairing">
+              {{#each food_pairing}}
+                <li>
+                  {{this}}
+                </li>
+              {{/each}}
+            </ul>
+          <p class="brewers-tips"><span>Brewers Tips: </span>{{this.brewers_tips}}</p>
+        </div>
+    </div>
   {{/each}}
 </ul>
 

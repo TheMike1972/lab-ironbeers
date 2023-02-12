@@ -1,10 +1,12 @@
-    <picture>
-        <img src='{{this.image_url}}' alt='{{this.name}}' />
-    </picture>
+    {{!-- <picture> --}}
+        <img class="beerImg" src='{{this.image_url}}' alt='{{this.name}}' />
+    {{!-- </picture> --}}
+    <div class="beer-info">
+    <a href="/beers/beer{{this.id}}">
+    <h2 class="beer-name">{{this.name}}</h2>
+    </a>
     
-    <h1 class="beer-name"><a href="/beers/beer{{this.id}}">{{this.name}}</a></h1>
-    
-    <h2 class="beer-tagline">{{this.tagline}}</h2>
+    <p class="beer-tagline">{{this.tagline}}</p>
     
     <p class="beer-description">{{this.description}}</p>
-    
+    </div>
